@@ -1,0 +1,16 @@
+1) A-
+	Covertura de sentencia: 'se definen casos que te perminan recorrer todas las lineas del codigo'.
+	Conunto de prueba 
+	T={<(x=1 ,y=0 ), valor esperado=1 >; 
+	   <(x=0 ,y=1 ), valor esperado=1 >:
+	   <(x=-2 ,y=-5 ), valor esperado=1 >}
+
+X | Y | RESULT
+----------------
+1 | 0 | Ciclo infinito  
+-> para solucionar este problema, se crean 2 if que si algun elemento sea 0 devuelva el otro.
+1 | 0 | 1
+0 | 1 | 1
+-2|-6 | Ciclo infinito
+-> para solucionar ese problema, se crea una funcion para transformar las entradas a valor absoluto.
+
